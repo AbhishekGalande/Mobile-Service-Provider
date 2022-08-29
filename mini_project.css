@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/* topbar code  */
+#up {
+    display: grid;
+    grid-template-columns: 1100px 55px 30px 25px;
+    margin-top: 3px;
+}
+
+.up1 {
+    color: black;
+    text-decoration: none;
+}
+
+#personal {
+    margin-left: 240px;
+}
+
+
+/* navbar code  */
+header{
+    width : 100%;
+    background: rgb(16, 16, 163);
+}
+
+.container1{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav>ul{
+    display: flex;
+}
+
+nav>ul>li{
+    padding: 20px;
+    list-style: none;      /*icons removes */
+}
+
+nav >ul >li >a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo >ul{
+    display: flex;
+}
+.logo >ul >li{
+    padding: 20px;
+    list-style: none;
+}
+.logo >ul >li >a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Dropdown code  */
+.megamenu{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-basis: 20%;
+    border: 2px solid rgb(77, 14, 202);
+    margin-top: 1px;
+    background-color: white;
+    
+}
+
+.logo > ul > li:hover .megamenu{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.menuitems{
+    margin: 20px;
+    color: rgb(43, 6, 155);
+    position: static;
+}
+.menuitems ul li{
+    list-style: none;
+    padding: 7px;
+    top: 10px;
+
+}
+.menuitems ul li a{
+ text-decoration: none;
+}
+
+.megamenu h5{
+    padding: 7px;
+}
+
+
+/* Robot div code  */
+.bodycolor {
+    background: white url('./images/backg.jpg') no-repeat center center;   
+}
+
+.discover {
+    position: relative;
+    margin-left: 280px;
+    padding-top: 198px;
+    color: white;
+    font-size: 50px;
+}
+
+.discover1 {
+    position: relative;
+    margin-left: 280px;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.button {
+    margin-left: 280px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    transition: all 0.5s;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.galaxy {
+    position: absolute;
+    height: 400px;
+    width: 800px;
+    left: 700px;
+    top: 1100px;
+    opacity: 0.9;
+}
+
+.fold4 {
+    position: absolute;
+    left: 280px;
+    top: 1000px;
+    color: rgb(15, 12, 95);
+    font-size: 48px;
+}
+
+.galaxy1 {
+    position: absolute;
+    left: 280px;
+    top: 1150px;
+    color: rgb(15, 12, 95);
+    font-size: 20px;
+}
+
+#brand {
+    position: absolute;
+    height: 400px;
+    width: 800px;
+    left: 800px;
+    top: 1000px;
+}
+
+.btn1 {
+    position: absolute;
+    top: 1210px;
+    left: 1px;
+    color: aliceblue;
+    height: 40px;
+}
+
+.sticky {
+    position: fixed;
+    top: 50%;
+    height: 40px;
+    width: 100px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    left: 95.2%;
+    transform: rotate(90deg);
+    font: bolder;
+}
+.sticky:hover {
+    cursor: pointer;
+}
+
+.success {
+    background-color: rgb(89, 192, 166);
+    text-align: center;
+
+}
